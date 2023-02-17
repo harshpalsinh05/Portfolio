@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="154-1545276_portfolio-icon-circle.png" type="image/x-icon">
+
+    <!-- link for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- #1 -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo1.png" class="logo"><img src="logo2.png" class="logo1">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact Me">Contact Me</a></li>
+                    <i class="material-icons close" onclick="closemenu()">close</i>
+                </ul>
+                <i class="material-icons menu" onclick="openmenu()">menu</i>
+            </nav>
+            <div class="header-text">
+                <p>Font-End Web-Designer</p>
+                <h1>Hi, I'm <span>Harshpalsinh<br>Jadeja</span> From Gujarat</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- #2 -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="20210402_103158.jpg" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1>About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at itaque facilis repudiandae nihil
+                        quaerat eum cum deleniti accusamus, culpa, dolorem dicta distinctio, corrupti ipsum ipsam?
+                        Necessitatibus sed recusandae fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nobis quidem deleniti inventore .</p>
+                    <div class="tab-titles">
+                        <p class="tab-links act-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contain act-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML5</span></li>
+                            <li><span>CSS3</span></li>
+                            <li><span>Javascript</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contain" id="Experience">
+                        <ul>
+                            <li><span>HTML5 : --</span>4-Months</li>
+                            <li><span>CSS3 : --</span>4-Months</li>
+                            <li><span>Javascript : --</span>Still Learning</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contain" id="Education">
+                        <ul>
+                            <li><span>HTML5 : --</span>100%</li>
+                            <li><span>CSS3 : --</span>60% to 70%</li>
+                            <li><span>Javascript : --</span>5% to 10%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- #3 -->
+    <div class="services" id="Services">
+        <div class="container">
+            <h1> My Services</h1>
+            <div class="serv-list">
+                <div>
+                    <i class="fa fa-html5"></i>
+                    <h2>HTML-5</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque sit repudiandae
+                        architecto nemo voluptatum corporis eum,.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa fa-css3"></i>
+                    <h2>CSS3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque sit repudiandae
+                        aliquid iste esse quam quo ipsum dolorem .</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa fa-gg"></i>
+                    <h2>Javascript</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque sit repudiandae
+                        aliquid iste esse quam quo ipsum dolorem nisi.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- #4 -->
+
+    <div class="portfolio" id="Portfolio">
+        <div class="container">
+            <h1>My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <a href="https://harshpalsinh05.github.io/A-Responive-Project--2/"><img src="Screenshot (69).png"
+                            alt=""></a>
+                    <div class="layer">
+                        <h3>University Website</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. suscipit blanditiis.</p>
+                        <a href=""><i class="fa fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <a href="https://harshpalsinh05.github.io/Responsive-Website/"><img src="Screenshot (71).png"
+                            alt=""></a>
+                    <div class="layer">
+                        <h3>Online Food Ordering Website</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. suscipit blanditiis.</p>
+                        <a href=""><i class="fa fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <a href="https://harshpalsinh05.github.io/Youtube-Clone/"><img src="Screenshot (73).png" alt=""></a>
+                    <div class="layer">
+                        <h3>Youtube Clone</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. suscipit blanditiis.</p>
+                        <a href=""><i class="fa fa-external-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- #5 -->
+    <div class="contact" id="Contact Me">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <i class="fa fa-send"></i>
+                    <p>hrjadeja02@gmail.com</p><br>
+                    <i class="fa fa-phone"></i>
+                    <p>+0_ 9432057332</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/p/CNJrNgFAI6i/?utm_source=ig_web_copy_link">
+                            <i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/harshpalsinh-r-jadeja-131036243">
+                            <i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/harshpalsinh05"><i class="fa fa-github"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn">Download CV </a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- #6 -->
+    <section class="footer">
+        <p>
+            Made With Using Only <i class="fa fa-html5"></i> And <i class="fa fa-css3"></i><br> By Harshpalsinh R Jadeja
+        </p>
+        <p>Copyright &COPY; www.HarshpalsinhJadejaportfolio.com</p>
+    </section>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0px"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontains = document.getElementsByClassName("tab-contain");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("act-links");
+            }
+            for (tabcontain of tabcontains) {
+                tabcontain.classList.remove("act-tab");
+            }
+            event.currentTarget.classList.add("act-links");
+            document.getElementById(tabname).classList.add("act-tab");
+        }
+    </script>
+</body>
+
+</html>

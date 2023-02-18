@@ -27,27 +27,31 @@
                     <li><a href="#Services">Services</a></li>
                     <li><a href="#Portfolio">Portfolio</a></li>
                     <li><a href="#Contact Me">Contact Me</a></li>
+                    <img src="moon.png " alt="" id="icon">
                     <i class="material-icons close" onclick="closemenu()">close</i>
                 </ul>
                 <i class="material-icons menu" onclick="openmenu()">menu</i>
             </nav>
             <div class="header-text">
-                <p>Font-End Web-Designer</p>
-                <h1>Hi, I'm <span>Harshpalsinh<br>Jadeja</span> From Gujarat</h1>
+                <div>
+                    <p class="p2">Font-End Web-Designer</p>
+                    <h1 class="h2">Hi, I'm <span>Harshpalsinh<br>Jadeja</span> From Gujarat</h1>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- #2 -->
-   <div id="About">
+    <div id="About">
         <div class="container">
             <div class="row">
                 <div class="about-col1">
                     <img src="20210402_103158.jpg" alt="">
                 </div>
                 <div class="about-col2">
-                    <h1>About Me</h1>
-                    <p>As a web developer, I have experience with HTML, CSS, and JavaScript. Meticulous web developer
+                    <h1 class="h1">About Me</h1>
+                    <p class="p1">As a web developer, I have experience with HTML, CSS, and JavaScript. Meticulous web
+                        developer
                         with over 6 Months of front end experience and passion for responsive website design and a firm
                         believer in the mobile-first approach. And Experience has taught me to
                         take accessibility and responsiveness seriously, and I am excited to continue my career at
@@ -196,28 +200,8 @@
         <p>Copyright &COPY; www.HarshpalsinhJadejaportfolio.com</p>
     </section>
 
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right = "0px"
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px"
-        }
+    <script src="index.js">
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontains = document.getElementsByClassName("tab-contain");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("act-links");
-            }
-            for (tabcontain of tabcontains) {
-                tabcontain.classList.remove("act-tab");
-            }
-            event.currentTarget.classList.add("act-links");
-            document.getElementById(tabname).classList.add("act-tab");
-        }
     </script>
 </body>
 

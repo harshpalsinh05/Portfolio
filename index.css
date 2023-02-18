@@ -8,7 +8,17 @@
 }
 
 body {
-    background: black;
+    background: var(--primary-color);
+}
+
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+.dark-theme {
+    --primary-color: white;
+    --secondary-color: black;
 }
 
 #header {
@@ -50,7 +60,7 @@ nav ul li {
 nav ul li a {
     border-radius: 5px;
     color: whitesmoke;
-    font-size: 18px;
+    font-size: 16px;
     position: relative;
     transition: all 0.5s;
 }
@@ -69,7 +79,8 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     box-shadow: -11px -1px 2px yellow;
     font-size: 1.3rem;
 }
@@ -80,6 +91,19 @@ nav ul li a:hover{
     margin-top: 20%;
     margin-left: 2%;
     font-size: 30px;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#icon:hover {
+    box-shadow: -11px -1px 2px yellow;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    text-decoration-color: #ff004f;
 }
 
 nav .menu {
@@ -93,6 +117,7 @@ nav .close {
 }
 
 .header-text h1 {
+    color: white;
     font-size: 60px;
     margin-top: 20px;
 }
@@ -103,7 +128,6 @@ nav .close {
 
 #about {
     padding: 80px 0px;
-    color: #ababab;
 }
 
 .row {
@@ -126,13 +150,24 @@ nav .close {
 }
 
 .about-col2 h1 {
-    color: whitesmoke;
     font-size: 60px;
+}
+
+.about-col2 .h1 {
+    color: var(--secondary-color);
+}
+
+.about-col2 .p1 {
+    color: var(--secondary-color);
 }
 
 .tab-titles {
     display: flex;
     margin: 20px 0px 40px;
+}
+
+.tab-titles .tab-links {
+    color: var(--secondary-color);
 }
 
 .tab-links {
@@ -159,7 +194,7 @@ nav .close {
 }
 
 .tab-contain ul li {
-    color: whitesmoke;
+    color: var(--secondary-color);
     margin: 10px 0px;
 }
 
@@ -189,12 +224,12 @@ nav .close {
 }
 
 .container h1 {
-    color: whitesmoke;
+    color: var(--secondary-color);
     font-size: 60px;
 }
 
 .container p {
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .serv-list h2 {
@@ -205,11 +240,11 @@ nav .close {
 }
 
 .serv-list p {
-    color: whitesmoke;
+    color: var(--secondary-color);
 }
 
 .serv-list div {
-    background-color: #262626;
+    background-color: var(--secondary-color);
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -292,7 +327,7 @@ nav .close {
 
 .layer p {
     padding-left: 15px;
-    color: whitesmoke;
+    color: var(--secondary-color);
 }
 
 .btn {
@@ -398,6 +433,16 @@ form textarea {
     color: orange;
 }
 
+.header-text h1 {
+    color: white;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text p {
+    color: whitesmoke;
+}
+
 /* Responsive */
 @media only screen and (max-width:600px) {
     #header {
@@ -448,30 +493,42 @@ form textarea {
         left: 25px;
         cursor: pointer;
     }
-    .about-col1, .about-col2 {
+
+    .about-col1,
+    .about-col2 {
         flex-basis: 100%;
     }
-    .about-col1{
+
+    .about-col1 {
         margin-bottom: 30px;
     }
-    .contact-left, .contact-right{
-        flex-basis: 100% ;
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
     }
+
     .logo {
         position: absolute;
         margin: 0%;
         width: 110px;
     }
-    
+
     .logo1 {
         position: relative;
         margin: 0% 32%;
         width: 70px;
     }
-     .about-col2 h1{
+
+    .about-col2 h1 {
         font-size: 40px;
     }
-    .about-col2 p{
+
+    .about-col2 p {
         font-size: 14px;
+    }
+
+    #icon {
+        margin-left: 32px;
     }
 }

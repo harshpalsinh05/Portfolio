@@ -468,4 +468,10 @@ form textarea {
         margin: 0% 32%;
         width: 70px;
     }
+     .about-col2 h1{
+        font-size: 40px;
+    }
+    .about-col2 p{
+        font-size: 14px;
+    }
 }

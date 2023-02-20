@@ -449,19 +449,29 @@ form textarea {
         background-image: url(c04e5dfa15bd4772da3a0140a0493676.jpg);
         width: 100%;
         height: 100vh;
+        background-image: url(8.jpg);
+        background-size:450px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .header-text {
-        margin-top: 60%;
+        margin-top: 170%;
         font-size: 16px;
     }
-
+    
+    .header-text p{
+        color: var(--secondary-color);
+        font-weight: bolder;
+    }
+    
     .header-text h1 {
+        color: var(--secondary-color);
         font-size: 30px;
     }
 
     nav .menu {
-        color: whitesmoke;
+        color:var(--secondary-color);
         display: block;
     }
 
